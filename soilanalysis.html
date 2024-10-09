@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soil Analysis</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #28a745;
+            margin-bottom: 30px;
+            font-size: 2.5rem;
+            text-transform: uppercase;
+        }
+
+        .soil-type {
+            margin-bottom: 20px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background-color: #e9f9e9;
+            transition: background-color 0.3s ease;
+        }
+
+        .soil-type:hover {
+            background-color: #d1e7d1;
+        }
+
+        .soil-type h2 {
+            color: #28a745;
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+        }
+
+        .soil-type p {
+            margin-top: 10px;
+            font-size: 1rem;
+            line-height: 1.5;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 14px;
+            color: #777;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 15px;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            .soil-type h2 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Soil Analysis for Farmers</h1>
+    
+    <div class="soil-type">
+        <h2>1. Clay Soil</h2>
+        <p>Clay soil is dense and retains moisture, making it fertile but heavy. It is ideal for crops like rice and wheat.</p>
+    </div>
+
+    <div class="soil-type">
+        <h2>2. Sandy Soil</h2>
+        <p>Sandy soil drains quickly and is warm. It is excellent for root crops like carrots and potatoes but requires more water.</p>
+    </div>
+
+    <div class="soil-type">
+        <h2>3. Loamy Soil</h2>
+        <p>Loamy soil is a balanced mixture of sand, silt, and clay, offering good drainage and fertility. It is suitable for most crops.</p>
+    </div>
+
+    <div class="soil-type">
+        <h2>4. Silt Soil</h2>
+        <p>Silt soil is smooth and retains moisture well. It is ideal for growing vegetables and crops that require consistent moisture.</p>
+    </div>
+
+    <div class="soil-type">
+        <h2>5. Peaty Soil</h2>
+        <p>Peaty soil is rich in organic matter and moisture. It is best for growing specific crops like blueberries and cranberries.</p>
+    </div>
+
+    <footer>
+        &copy; 2024 Soil Analysis Info. All Rights Reserved.
+    </footer>
+</div>
+
+</body>
+</html>

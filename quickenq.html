@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quick Enquiry</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+        }
+
+        .enquiry-container {
+            max-width: 900px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .enquiry-container h2 {
+            text-align: center;
+            font-size: 30px;
+            margin-bottom: 20px;
+            color: #28a745;
+            text-transform: uppercase;
+        }
+
+        .enquiry-form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .enquiry-form label {
+            font-size: 18px;
+            color: #333;
+        }
+
+        .enquiry-form input, 
+        .enquiry-form select, 
+        .enquiry-form textarea {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            font-size: 16px;
+            outline: none;
+            transition: border-color 0.3s ease;
+        }
+
+        .enquiry-form input:focus, 
+        .enquiry-form select:focus, 
+        .enquiry-form textarea:focus {
+            border-color: #28a745;
+        }
+
+        .enquiry-form textarea {
+            resize: none;
+        }
+
+        .enquiry-btn {
+            padding: 15px;
+            background-color: #28a745;
+            color: white;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .enquiry-btn:hover {
+            background-color: #218838;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .enquiry-container {
+                padding: 15px;
+            }
+
+            .enquiry-form {
+                gap: 10px;
+            }
+
+            .enquiry-form label {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="enquiry-container">
+    <h2>Quick Enquiry</h2>
+    <form class="enquiry-form" action="#" method="POST">
+        <!-- Farmer Name -->
+        <label for="name">Farmer Name</label>
+        <input type="text" id="name" name="farmer_name" placeholder="Enter your name" required>
+
+        <!-- Contact Number -->
+        <label for="contact">Contact Number</label>
+        <input type="text" id="contact" name="contact" placeholder="Enter your contact number" required>
+
+        <!-- Crop/Seed Enquiry -->
+        <label for="enquiry-type">What are you looking for?</label>
+        <select id="enquiry-type" name="enquiry_type" required>
+            <option value="">Select an option</option>
+            <option value="seeds">Seeds Information</option>
+            <option value="crops">Crops Information</option>
+            <option value="fertilizers">Fertilizers Information</option>
+            <option value="pesticides">Pesticides Information</option>
+        </select>
+
+        <!-- Description -->
+        <label for="description">Additional Information or Specific Query</label>
+        <textarea id="description" name="description" rows="5" placeholder="Provide any additional details or questions"></textarea>
+
+        <!-- Submit Button -->
+        <button type="submit" class="enquiry-btn">Submit Enquiry</button>
+    </form>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #28a745;
+        }
+
+        .logo img {
+            height: 50px;
+        }
+
+        .nav-links ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-links ul li {
+            display: inline-block;
+        }
+
+        .nav-links ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            padding: 5px 15px;
+        }
+
+        .nav-links ul li a.active {
+            background-color: #ff9800;
+            border-radius: 5px;
+        }
+
+        .login-box {
+            width: 350px;
+            padding: 40px;
+            background-color: #28a745;
+            border-radius: 10px;
+            margin: 100px auto;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .login-box h2 {
+            text-align: center;
+            color: white;
+            margin-bottom: 30px;
+        }
+
+        .login-box input[type="email"],
+        .login-box input[type="password"] {
+            width: 100%;
+            padding: 15px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+            background-color: #f4f4f4;
+            font-size: 16px;
+        }
+
+        .login-btn, .register-btn {
+            width: 100%;
+            padding: 15px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            color: white;
+            cursor: pointer;
+        }
+
+        .login-btn {
+            background-color: #ff9800;
+        }
+
+        .register-btn {
+            background-color: #ff9800;
+        }
+
+        .forgot-link {
+            display: block;
+            text-align: center;
+            color: blue;
+            margin-top: 10px;
+            text-decoration: none;
+        }
+
+        .forgot-link:hover {
+            text-decoration: underline;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="login-box">
+        <form action="#">
+            <h2>Login</h2>
+            <input type="email" placeholder="Enter Your Register Email" required>
+            <input type="password" placeholder="Enter Your Password" required>
+            <button type="submit" class="login-btn">Login</button>
+            <button type="button" class="register-btn">Register Here</button>
+            <a href="#" class="forgot-link">Don't have an account?</a>
+        </form>
+    </div>
+</body>
+</html>
